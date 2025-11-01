@@ -4,13 +4,13 @@
 @import url("https://milbits.github.io/oldcord/src/components/other.css");
 @import url("https://milbits.github.io/oldcord/src/components/redesign.css");
 
+
 /*main font*/
 body{
 	--font-primary: "gg sans", Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	--font-display: "gg sans", Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 	--font-headline: "gg sans", Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
 /*linked messages*/
 .wrapper_f61d60 {
     font-weight: 500;
@@ -32,7 +32,26 @@ body {
     --bg-brand: #6F73DC;
     --blurple: #6F73DC;
     }
+/*Pinned message header*/
 
+.header_e8b59c{
+    background-color: #202225 !important; 
+}
+.messageGroupWrapper_e8b59c {
+    background-color: #36393f;
+    border: 2px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    margin: 0 0 6px;
+    margin-bottom: var(--space-8);
+    overflow: hidden;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-margin-end: var(--space-4);
+    margin-inline-end: var(--space-4);
+    border-color: #202225;
+}
 
 .theme-dark:not(html.custom-theme-background, :has(#clientThemeVars)) {
     /*reaction emojis*/
@@ -58,11 +77,6 @@ body {
     --interactive-active: var(--white-500);
 }
 
-body {
-    /*channel icons*/
-        --text-muted: #72767d;
-}
-
 .theme-dark:not(html.custom-theme-background, :has(#clientThemeVars)) {
      /*idk*/
     --border-strong: rgb(60, 255, 0);
@@ -78,9 +92,7 @@ body {
     --__spoiler-warning-background-color: hsl(0 calc( 1 *0%) 0% /0.6);
     --__spoiler-warning-background-color--hover: hsl(0 calc( 1 *0%) 0% /0.9);
     --__spoiler-container-box-shadow-color: hsl(0 calc( 1 *0%) 0% /0.1);
-
     --autocomplete-bg: color-mix(in oklab, var(--primary-630) 100%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
-
     --modal-background: var(--background-primary);
     --primary-600: var(--background-primary);
     --primary-630: var(--background-secondary);
@@ -94,9 +106,7 @@ body {
     --background-mentioned-hover: hsla(38, calc(1 * 96%), 54%, 0.078);
     --background-help-warning: hsla(38, calc(1 * 96%), 54%, 0.102);
     --background-help-info: #00b0f41a;
-    
     --scrollbar-thin-track: transparent;
-
     --scrollbar-auto-scrollbar-color-thumb: #b306f2;
     --scrollbar-auto-scrollbar-color-track: #0dbf1e;
     --elevation-stroke: 0 0 0 1px #04040526;
@@ -201,8 +211,6 @@ body {
     background-color: var(--selected-reaction-emoji-background) !important;
     box-shadow:0px 0px 0px 1.5px var(--emoji-reaction-border) inset;
 }
-
-
 
 /*your reactions number colour*/
 .reaction_f8896c.reactionMe_f8896c .reactionCount_f8896c,
